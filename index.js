@@ -1,3 +1,5 @@
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+const REPO_URL = `https://${GITHUB_TOKEN}@github.com/davudkII/server.git`;
 const jsonServer = require('json-server');
 const server = jsonServer.create();
 const router = jsonServer.router('db.json');
