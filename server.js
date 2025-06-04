@@ -32,7 +32,7 @@ server.patch('/users/user1', (req, res) => {
   }
 });
 
-server.use(router);
-server.listen(8090, () => {
-  console.log('JSON Server запущен на http://localhost:8090');
+const PORT = process.env.PORT || 8090;
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`JSON Server запущен на http://0.0.0.0:${PORT}`);
 });
