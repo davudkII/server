@@ -1,0 +1,60 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "Байкал",
+      "link": "https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg",
+      "likes": [
+        {
+          "id": "user1"
+        }
+      ],
+      "owner": {
+        "id": "user1"
+      }
+    },
+    {
+      "name": "Пудж",
+      "link": "https://dota2.ru/img/heroes/pudge/portrait.jpg",
+      "likes": [
+        {
+          "id": "user1"
+        }
+      ],
+      "owner": {
+        "id": "user1"
+      },
+      "id": 2
+    },
+    {
+      "name": "qwqw",
+      "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI-SaYWlXmVicHWYEEpRgrmFir507tWQk3pA&s",
+      "likes": [
+        {
+          "id": "user1"
+        }
+      ],
+      "owner": {
+        "id": "user1"
+      },
+      "id": 3
+    },
+    {
+      "name": "Юра",
+      "link": "https://sun9-61.vkuserphoto.ru/impg/c847124/v847124088/13ccd6/2tjafI5FmGA.jpg?size=1012x486&quality=96&sign=7e4a915efc08ff608860b0bf6a627b93&type=album",
+      "likes": [],
+      "owner": {
+        "id": "user1"
+      },
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": "user1",
+      "name": "Пудж инвокеров",
+      "about": "Исследователь дна океана ",
+      "avatar": "https://dota2.ru/img/heroes/pudge/portrait.jpg"
+    }
+  ]
+}
