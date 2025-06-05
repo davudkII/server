@@ -86,14 +86,14 @@ server.patch('/cards/:id', (req, res) => {
 server.patch('/users/user1', (req, res) => {
   const db = router.db;
   const user = db.get('users').find({ id: "user1" }).value();
-  
-  if (req.body.avatar) {
-    user.avatar = req.body.avatar;
-    db.get('users').find({ id: "user1" }).assign(user).write();
-    res.json(user);
-  } else {
-    res.status(400).json({ error: "Не указана ссылка на аватар" });
-  }
+
+  // Обновляем только те поля, которые были переданы в теле запроса
+  if (req.body.name !== undefined) user.name = req.body.name;
+  if (req.body.about !== undefined) user.about = req.body.about;
+  if (req.body.avatar !== undefined) user.avatar = req.body.avatar;
+
+  db.get('users').find({ id: "user1" }).assign(user).write();
+  res.json(user);
 });
 
 // Основной роутинг
