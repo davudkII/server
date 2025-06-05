@@ -106,7 +106,7 @@ server.listen(PORT, '0.0.0.0', () => {
   
   // Первоначальная синхронизация с GitHub
   try {
-    execSync('git pull --ff-only');
+    execSync('git checkout main && git pull origin main');
     console.log('Синхронизировано с GitHub');
   } catch (error) {
     console.error('Ошибка при синхронизации с GitHub:', error.message);
